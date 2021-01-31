@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <title>Sunil Solanki</title>
-  <link rel = "icon" href="circle-croppe.png" type = "image/x-icon">
+  <link rel = "icon" href="/circle-croppe.png" type = "image/x-icon">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
   * {box-sizing: border-box;}
@@ -16,24 +16,25 @@
      background-attachment: fixed; 
      font-size: 16px;
      color: black;
-	 margin:5;
+	 margin: 5px;
   }
   	.header { 
-      padding: 140px;
+      padding: 180px 50px;
     }
 
   	.header h1 {
-      font-size: 55px;
+      font-size: px;
       text-align: center;
      font-family: "Trebuchet MS", Helvetica, sans-serif;
-     
   	}
-    .header h1:hover {
-      font-size: 56px;
-    }
+  /*  .header h1:hover {
+      font-size: 16px;
+    }*/
+	
   .header img{
       width: 15vw;
-      margin-left: 41%;
+      margin-left: 40%;
+
     }
 	
 	
@@ -47,13 +48,13 @@
   		float: down;
   		text-align: center;
   		padding: 12px 14px;
-  		color: darkblue;
+  	
   		text-decoration: none;
 
   	}
   	.nav a:hover {
   		background-color: pink;
-  		color: darkred;
+  		
   	}
     .sticky {
   position: -webkit-sticky;
@@ -67,13 +68,13 @@ ul {
   width: 100px;
   background-color: ;
   position: fixed;
-  height: 40%;
+  height: 43%;
   overflow: auto;
 }
 li a {
   display: block;
   color: white;
-  padding: 25px 10px;
+  padding: 20px 10px;
   text-decoration: none;
 }
 
@@ -81,7 +82,7 @@ li a {
 li a:hover {
 padding: 0px 0px
   background-color: darkred;
-  color: skyblue;
+  color: Aqua;
 }
 
 .about {
@@ -90,15 +91,28 @@ padding: 0px 0px
       font-size: 20px;
     }
    
-    .about a{
+    .about h1{
       
-      font-size: 4px;
+      font-size: 20px;
+      
+	 
+    }
+	.about h3{
+      
+      font-size: 20px;
+  
+	 
+    }
+	.about p{
+      
+      font-size: 10px;
       padding: 0px;
+	 
     }
-    .about a:hover{
-      font-size: 4px;
-    }
-  }
+    */.about h1:hover{
+      font-size: 25px;
+    }*/
+  
 .footer {
 position: move;
 left: 0px;
@@ -173,9 +187,57 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+
+@media only screen and (min-width: 1000px) {
+ .header img{
+      width: 16vw;
+      margin-left: 41%;
+    }
+	
+	.header h1 {
+	font-size: 55px;
+      text-align: center;
+     font-family: "Trebuchet MS", Helvetica, sans-serif;
+     
+  	}
+	
+    .header h1:hover {
+      font-size: 56px;
+    }
+ 
+.about {
+      margin-left: 19%;
+      margin-right: 28%;
+      font-size: 25px;
+    }
+   
+    .about h1{
+      
+      font-size: 30px;
+      
+	 
+    }
+	
+	.about p{
+      
+      font-size: 18px;
+      
+	 
+    }
+    .about h1:hover{
+      font-size: 31px;
+    }
+	.footer {
+position: move;
+left: 0px;
+bottom: 0px;
+right: 30px; 
+width: 100%;
+background-color: gray;
+color: white;
+text-align: center; 
 }
+  }
 
 </style>
 </head>
@@ -188,10 +250,10 @@ img {vertical-align: middle;}
 	  <li><a href="#Contact" target="_blank"><b>Contact me</b></a></li>
   </ul>
 	<div  class="header" id="home">
-	 <img src="circle-croppe.png">
-	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: white;"><h4 style="margin-bottom: 0px;">Hey I'm</h4></a>
+	 <img src="/circle-croppe.png">
+	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: white; font-size: "><h4 style="margin-bottom: 0px;">Hey I'm</h4></a>
 	   <div style= "height:300px;">
-	   <h1 style="text-align: center; margin-top: 0px;color: white;"><strong>:) Sunil Solanki</strong></h1>
+	   <h1 style="text-align: center; margin-top: 0px;color: white;"><strong>Sunil Solanki</strong></h1>
   </div>
     </div>
 	
@@ -275,7 +337,7 @@ img {vertical-align: middle;}
   <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
-  <h1 style= "color: white"><strong>Galary</strong></h1>
+  <h1 style= "color: #0B62F5"><strong>Galary</strong></h1>
 </div><br>
 
 </div>
@@ -303,20 +365,21 @@ function showSlides() {
 </script>
 <br     ><br     ><br     ><br     >
 
-  <div class="about" id="aboutme">
-  <div style= "height:300px;">
+  <div class="about" id="aboutme" >
+  
       <h1 style="font-family: Arial, Helvetica, sans-serif;color: darkred"><b>About me</b></h1>
 	  <p style="color: yellow;">Hey, I'm Sunil Solanki, I am a student of Computer Science branch, pursuing Bachelor of Technology (B. Tech.) IIIrd Year at Bansal Institute of Research & Technology, Bhopal.
 	  Basically I belong to a small village named Jagmalpura it is situated in M.P. India and I completed my schooling from two different schools, upto 3rd I studied at my 
 	  village Jagmalpura in New Golden Middle School and from 4th to 12th I studied at Ashta in Talent Innovative Hr. Sec. School.
      Beside this I love traveling and I'm also a foodie person and I like to watch movies and web series, also love bike riding....(:</p>
-</div>
- <div style= "height:100px;">
- <h3 style="color:red; text-align: center"><b>Do follow me on my social media handles</b></h3>
-</div>
-</div><br >
+<br><br><br>
+
+ <h3 style="color:red; text-align: center"><b>Do follow me On</b></h3>
+
+</div><br ><br ><br >
 <div class="footer">
 ©Copyright Sunil Solanki 2021- All Right Reserved. 
 </div>
+
 </body>
 </html>

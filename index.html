@@ -5,6 +5,7 @@
   <link rel = "icon" href="circle-croppe.png" type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href="all.css">
 
   <style>
   * {box-sizing: border-box;}
@@ -186,6 +187,32 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+	  /* social icon styling */
+
+  .social-icon{
+   margin-left: 15%;
+  list-style: none;
+  text-align: center;
+ 
+  }
+  
+  .social-icon a{
+  color: white;
+  margin: 5px;
+  transition: all 0.6s ease; 
+  }
+  .social-icon a:hover{
+  color:blu;
+  font-size: 29px;
+  transition: smooth;
+  
+  }
+  .social-icon a:hover {
+ color: blue;
+  }
+  
+
+	  
 /* On smaller screens, decrease text size */
 
 @media only screen and (min-width: 1000px) {
@@ -244,10 +271,10 @@ text-align: center;
 <body>
 <ul>
 
-      <li><a href="#home"><strong>Home</strong></a></li>
-	  <li><a href="#galary"><b>Galary</b></a></li>
-	  <li><a href="#aboutme"><b>About me</b></a></li>
-	  <li><a href="#Contact" target="_blank"><b>Contact me</b></a></li>
+      <li><a href="#home"><strong><i class="fas fa-home"></i> Home</strong></a></li>
+	  <li><a href="#gallery"><b><i class="fas fa-camera-retro"></i> Gallery</b></a></li>
+	  <li><a href="#aboutme"><b><i class="fas fa-info"></i> About me</b></a></li>
+	  <li><a href="#Contact" target="_blank"  style= "font-size: 12px"><b><i class="fas fa-phone-alt"></i> Contact me</b></a></li>
   </ul>
 	<div  class="header" id="home">
 	 <img src="circle-croppe.png">
@@ -257,7 +284,7 @@ text-align: center;
   </div>
     </div>
 	
-  <div class="slideshow-container" id="galary">
+  <div class="slideshow-container" id="gallery">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 12</div>
@@ -337,7 +364,7 @@ text-align: center;
   <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
-  <h1 style= "color: #0B62F5"><strong>Galary</strong></h1>
+  <h1 style= "color: darkblue"><strong>Gallery</strong></h1>
 </div><br>
 
 </div>
@@ -367,14 +394,19 @@ function showSlides() {
 
   <div class="about" id="aboutme" >
   
-      <h1 style="font-family: Arial, Helvetica, sans-serif;color: darkred"><b>About me</b></h1>
-	  <p style="color: yellow;">Hey, I'm Sunil Solanki, I am a student of Computer Science branch, pursuing Bachelor of Technology (B. Tech.) IIIrd Year at Bansal Institute of Research & Technology, Bhopal.
+      <h1 style="font-family: Arial, Helvetica, sans-serif;color: darkred;margin-left: 15%;"><b>About me</b></h1>
+	  <p style="color: yellow;margin-left: 15%;">Hey, I'm Sunil Solanki, I am a student of Computer Science branch, pursuing Bachelor of Technology (B. Tech.) IIIrd Year at Bansal Institute of Research & Technology, Bhopal.
 	  Basically I belong to a small village named Jagmalpura it is situated in M.P. India and I completed my schooling from two different schools, upto 3rd I studied at my 
 	  village Jagmalpura in New Golden Middle School and from 4th to 12th I studied at Ashta in Talent Innovative Hr. Sec. School.
      Beside this I love traveling and I'm also a foodie person and I like to watch movies and web series, also love bike riding....(:</p>
 <br><br><br>
 
- <h3 style="color:red; text-align: center"><b>Do follow me On</b></h3>
+ <h3 style="color:red; text-align: center; margin-left: 15%;  margin-bottom:2%;"><b>Do follow me On</b></h3>
+	  <li class= "social-icon">
+     <a href="https://www.facebook.com/profile.php?id=100062940562628"><i class="fab fa-facebook"></i></a>
+     <a href="https://www.instagram.com/sunilsolankiji/"><i class="fab fa-instagram"></i></a>
+     <a href="mailto:sunilso9644@gmail.com"><i class="far fa-envelope"></i></a>
+     <a href="https://www.linkedin.com/in/sunil-solanki-28b987175/"><i class="fab fa-linkedin-in"></i></a></li>
 
 </div><br ><br ><br >
 <div class="footer" style= "font-size: 12px; text-align: center">

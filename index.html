@@ -6,9 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel = "stylesheet" href="fontawesome-free-5.15.2-web/css/all.css">
-
+<link rel="stylesheet" href="style.css">
   <style>
-  * {box-sizing: border-box;}
+  *{
+  margin: 0;
+  padding: 0;
+ 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
     html {scroll-behavior: smooth;}
     body {
      background-image: url('Backgroundfinal.jpg');
@@ -71,44 +77,7 @@ padding: 0px 0px
 color:darkblue;
 }
 
-.about {
-      margin-left: 19%;
-      margin-right: 28%;
-      font-size: 20px;
-    }
-   
-    .about h1{
-      
-      font-size: 20px;
-      
-	 
-    }
-	.about h3{
-      
-      font-size: 20px;
-  
-	 
-    }
-	.about p{
-      
-      font-size: 10px;
-      padding: 0px;
-	 
-    }
-    /*.about h1:hover{
-      font-size: 25px;
-    }*/
-  
-.footer {
-position: move;
-left: 0px;
-bottom: 0px;
-right: 5px; 
-width: 100%;
-background-color: gray;
-color: white;
-text-align: center;
-}
+
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -118,17 +87,6 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
 
 /* Number text (1/12 etc) */
 .numbertext {
@@ -172,47 +130,15 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-	           /* social icon styling */
-
- .social-icon{
-   margin-left: 15%;
-  list-style: none;
-  text-align: center;
-  }
-  
-  .social-icon a{
-  color: white;
-  margin: 5px;
-  transition: all 0.6s ease; 
-  }
-  .social-icon a:hover{
-  font-size: 29px;
-  transition: smooth;
-  
-  }
-	  
-	  .social-icon a:nth-child(1):hover{
-  color: #3b5999;
-  }
-  
-  .social-icon a:nth-child(2):hover{
-  color:#e4405f;
-  }
-  
-  .social-icon a:nth-child(3):hover{
-  color:red;
-  }
-  
-  .social-icon a:nth-child(4):hover{
-  color:#0077B5;
-  }
-  
-  
 
 	  
-/* On smaller screens, decrease text size */
+/* On large screens, increase text size */
 
 @media only screen and (min-width: 1000px) {
+  body {
+  overflow:visible;
+  }
+ 
  .header img{
       width: 16vw;
       margin-left: 41%;
@@ -228,59 +154,15 @@ img {vertical-align: middle;}
     .header h1:hover {
       font-size: 56px;
     }
- 
-.about {
-      margin-left: 19%;
-      margin-right: 28%;
-      font-size: 25px;
-    }
-   
-    .about h1{
-      
-      font-size: 30px;
-      
-	 
-    }
-	
-	.about p{
-      
-      font-size: 18px;
-      
-	 
-    }
-    .about h1:hover{
-      font-size: 31px;
-    }
-	
-	.social-icon{
-	font-size: 33px;
-	}
-	.social-icon a:hover{
-      font-size: 38px;
-	  }
-	
-	
-	.footer {
-position: move;
-left: 0px;
-bottom: 0px;
-right: 30px; 
-width: 100%;
-background-color: gray;
-color: white;
-text-align: center; 
-}
-  }
-
 </style>
 </head>
 <body>
 <ul>
 
-      <li><a href="index.html"><strong><i class="fas fa-home"></i> Home</strong></a></li>
+      <li><a href="#home"><strong><i class="fas fa-home"></i> Home</strong></a></li>
 	  <li><a href="#gallery"><b><i class="fas fa-camera-retro"></i> Gallery</b></a></li>
 	  <li><a href="#aboutme"><b><i class="fas fa-info"></i> About me</b></a></li>
-	  <li><a href="contactme.html" style= "font-size: 12px"><b><i class="fas fa-phone-alt"></i> Contact me</b></a></li>
+	  <li><a href="#contactme" style= "font-size: 12px"><b><i class="fas fa-phone-alt"></i> Contact me</b></a></li>
   </ul>
 	<div  class="header" id="home">
 	 <img src="circle-croppe.png">
@@ -398,27 +280,68 @@ function showSlides() {
 </script>
 <br     ><br     ><br     ><br     >
 
-  <div class="about" id="aboutme" >
-  
-      <h1 style="font-family: Arial, Helvetica, sans-serif;color: darkred;margin-left: 15%;"><b>About me</b></h1>
-	  <p align="justify" style="color: yellow;margin-left: 15%;">Hey, I'm Sunil Solanki, I am a student of Computer Science branch, pursuing Bachelor of Technology (B. Tech.) IIIrd Year at Bansal Institute of Research & Technology, Bhopal.
+ <footer>
+      <div class="main-content">
+        <div class="left box" id="aboutme">
+          <h2>About us</h2>
+          <div class="content">
+            <p>Hey, I'm Sunil Solanki, I am a student of Computer Science branch, pursuing Bachelor of Technology (B. Tech.) IIIrd Year at Bansal Institute of Research & Technology, Bhopal.
 	  Basically I belong to a small village named Jagmalpura it is situated in M.P. India and I completed my schooling from two different schools, upto 3rd I studied at my 
 	  village Jagmalpura in New Golden Middle School and from 4th to 12th I studied at Ashta in Talent Innovative Hr. Sec. School.
-     Beside this I love traveling and I'm also a foodie person and I like to watch movies and web series, also love bike riding....(:</p>
-<br><br><br>
+     Beside this I love traveling and I'm also a foodie person and I like to watch movies and web series, also love bike riding....(:
+	 <div class="social">
+              <a href="https://www.facebook.com/profile.php?id=100062940562628"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://www.instagram.com/sunilsolankiji/"><span class="fab fa-instagram"></span></a>
+              <a href="mailto:sunilso9644@gmail.com" target="_blank"><span class="far fa-envelope"></span></a>
+			   <a href="https://www.linkedin.com/in/sunil-solanki-28b987175/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+            </div>
+          </div>
+        </div>
 
- <h3 style="color:darkred; text-align: center; margin-left: 15%;  margin-bottom:2%;"><b>Follow me</b></h3>
-	  <! Social media links section>
-<li class="social-icon">	  
-    <a href="https://www.facebook.com/profile.php?id=100062940562628" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/sunilsolankiji/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="mailto:sunilso9644@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-    <a href="https://www.linkedin.com/in/sunil-solanki-28b987175/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Jagmalpura,Ashta</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+91 6232971301</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">Sunilsolanki630s@gmail.com</span>
+            </div>
+          </div>
+        </div>
 
-</div><br ><br ><br >
-<div class="footer" style= "font-size: 12px; text-align: center">
-Copyright© Sunil Solanki 2021- All Right Reserved. 
-</div>
-
-</body>
+        <div class="right box" id="contactme">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+				<input type="email" required>
+                <!-- <changeit rows="2" cols="25" required></changeit> -->
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By <a href="https://www.instagram.com/sunilsolankiji/">Sunil Solanki</a> | </span>
+          <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+  </body>
 </html>

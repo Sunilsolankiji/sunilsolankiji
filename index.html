@@ -406,11 +406,11 @@ function showSlides() {
             <form action="#">
               <div class="email">
                 <div class="text">Email *</div>
-                <input type="email" required>
+                <input type="email" name="Email" required>
               </div>
               <div class="msg">
                 <div class="text">Message *</div>
-				<input type="email" required>
+				<input type="msg" name="Message" required>
                 <!-- <changeit rows="2" cols="25" required></changeit> -->
               </div>
               <div class="btn">
@@ -427,6 +427,17 @@ function showSlides() {
         </center>
       </div>
     </footer>
+	<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwr26FGyy-fj05HdCyLlE-02VU-QlXP6M-Z0w11Usklf0QtuZvFQv7wdcC8jZ_CU6kM/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 	 <script>
       var preloader = document.getElementById('loader');
       function mysite(){

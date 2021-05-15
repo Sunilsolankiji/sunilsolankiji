@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Sunil Solanki</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel = "icon" href="circle-croppe.png" type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,6 +96,28 @@ padding: 0px 0px
 color:darkblue;
 }
 
+	  
+	  .typing{
+  width: 0ch;
+  color: #ffff;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 8s infinite alternate;
+  border-right: 3px solid yellow;
+  text-align: center;
+  margin-left: 15%;
+  margin-top: -120%;
+  margin-bottom: 50%;
+  font-size: 20px;
+}  
+@keyframes text{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 19.4ch;
+  }
+}
 
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -205,6 +228,32 @@ margin-bottom:40%;
     .header h1:hover {
       font-size: 56px;
     }
+	
+	.typing{
+  width: 0ch;
+  color: #ffff;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 8s infinite alternate;
+  border-right: 3px solid yellow;
+  position: absolute; 
+  text-align: center;
+  margin-left: 34%;
+  margin-top: -26%;
+  margin-bottom: 20%;
+  font-size: 40px;
+}  
+.typing h4{
+  justify-content: center;
+}
+@keyframes text{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 19.4ch;
+  }
+}
 	  .container {
   position: relative;
   width: 55%;
@@ -243,18 +292,22 @@ margin-bottom:40%;
 	</header>
 	<div  class="header" id="home">
 	 <img src="circle-croppe.png">
-	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: white; font-size: "><h4 style="margin-bottom: 0px;">Hey I'm</h4></a>
+	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: white; font-size: "><h4 style="margin-bottom: 0px;" data-aos="fade-down">Hey I'm</h4></a>
 	   <div style= "height:300px;">
-	   <h1 style="text-align: center; margin-top: 0px;color: white;"><strong>Sunil Solanki</strong></h1>
+	   <h1 style="text-align: center; margin-top: 0px;color: white;" data-aos="fade-down"><strong>Sunil Solanki</strong></h1>
   </div>
     </div>
 	
-  <div class="slideshow-container" id="gallery">
+	 <div class="typing"><h4>I'm a Software Engineer</h4></div>
+	
+	<a href="#gallery"><div class="scroll-down"></div></a>
+	
+  <div class="slideshow-container" id="gallery" data-aos="fade-up">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 12</div>
   <img src="Sunil6.jpg" style="width:90%">
-
+ 
 </div>
 
 <div class="mySlides fade">
@@ -357,7 +410,7 @@ function showSlides() {
 </script>
 <br     ><br     ><br     ><br     >
 
-	<div class="container">
+	<div class="container" data-aos="fade-up">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/OQpmL6pweYg?autoplay=1mute=1&playlist=OQpmL6pweYg&loop=1" frameborder="0" 
 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-left:">
 		</iframe>
@@ -368,7 +421,7 @@ function showSlides() {
       <div class="main-content">
         <div class="left box" id="aboutme">
           <h2>About us</h2>
-          <div class="content">
+          <div class="content" data-aos="fade-up">
             <p>Hey, I'm Sunil Solanki, I am a student of Computer Science branch, pursuing Bachelor of Technology (B. Tech.) IIIrd Year at Bansal Institute of Research & Technology, Bhopal.
 	  Basically I belong to a small village named Jagmalpura it is situated in M.P. India and I completed my schooling from two different schools, upto 3rd I studied at my 
 	  village Jagmalpura in New Golden Middle School and from 4th to 12th I studied at Ashta in Talent Innovative Hr. Sec. School.
@@ -384,7 +437,7 @@ function showSlides() {
 
         <div class="center box">
           <h2>Address</h2>
-          <div class="content">
+          <div class="content" data-aos="fade-up">
             <div class="place">
       <a href="https://goo.gl/maps/Qnnv9oU2rfmuo3hq5" target="_blank" style="color:white"><span class="fas fa-map-marker-alt"></span></a>
             <span class="text">Jagmalpura,Ashta</span>
@@ -403,14 +456,14 @@ function showSlides() {
         <div class="right box" id="contactme">
           <h2>Contact us</h2>
           <div class="content">
-            <form method="post" autocomplete="off" name="google-sheet" >
+            <form method="post" autocomplete="off" name="google-sheet" data-aos="fade-up">
               <div class="email">
                 <div class="text">Email *</div>
                 <input type="email" name="Email" required>
               </div>
               <div class="msg">
                 <div class="text">Message *</div>
-				<input type="msg" name="Message" required>
+		<input type="text" name="Message" required>
                 <!-- <changeit rows="2" cols="25" required></changeit> -->
               </div>
               <div class="btn">
@@ -423,7 +476,7 @@ function showSlides() {
       <div class="bottom">
         <center>
           <span class="credit">Created By <a href="https://www.instagram.com/sunilsolankiji/">Sunil Solanki</a> | </span>
-          <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+          <span> &copy 2021 All rights reserved.</span>
         </center>
       </div>
     </footer>
@@ -434,7 +487,7 @@ function showSlides() {
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Thanks for Contacting me...! I Will Contact You Soon..."))
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
@@ -444,5 +497,12 @@ function showSlides() {
         preloader.style.display = 'none';
       }
     </script>
+	
+<!-- on scroll effects script start -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!--on scroll effects script end -->
   </body>
 </html>

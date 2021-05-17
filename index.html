@@ -18,14 +18,19 @@
 }
     html {scroll-behavior: smooth;}
     body {
-     background-image: url('Backgroundfinal.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed; 
      font-size: 16px;
      color: black;
-	 margin: 5px;
+	 margin: 0px;
   }
+	  
+	  .background{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/Backgroundfinal.jpg');
+  background-repeat: no-repeat;
+     background-size:cover;
+     background-attachment: fixed;
+}
+
+	  
 	  #loader img{
     position: fixed;
     width: 70vw;
@@ -65,37 +70,30 @@
 	
 	
 
-ul {
+ul{
+  float: left;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100px;
-  background-color: ;
-  position: fixed;
-  height: 43%;
-  overflow: auto;
+  margin-top: 0px;
 }
-ul a {
-  display: block;
-  color: white;
-  padding: 20px 10px;
-  text-decoration: none;
-}
-	  
-	  ul a:visited {
-color:white;
+ul li {
+  display: inline-block;
+padding: 9px 1px;
+margin-left: 1px;
 }
 
-/* Change the link color on hover */
-ul a:hover {
-padding: 0px 0px
-  background-color: darkred;
-  color: Aqua;
-}
-	  ul a:active {
-color:darkblue;
+ul li a{
+  text-decoration: none;color: #ffff;
+  padding: 1px 5px ;
+  border:1px solid #ffff;
+  font-size: 0.95rem;
+  transition: 0.8s ease;
 }
 
+ul li a:hover{
+  background-color: #ffff;
+  color: black;
+
+}
 	  
 .typing{
   width: 0ch;
@@ -212,21 +210,46 @@ margin-bottom:40%;
     no-repeat center;
     z-index: 9999;
     overflow: hidden;
-  }  
+  } 
+	
+	
+ul{
+  float: left;
+  list-style-type: none;
+  margin-top: 15px;
+}
+ul li{
+  display: inline-block;
+
+}
+
+ul li a{
+  text-decoration: none;color: #ffff;
+  padding: 5px 20px;
+  border:1px solid #ffff;
+  transition: 0.8s ease;
+}
+
+ul li a:hover{
+  background-color: #ffff;
+  color: black;
+
+}
+	
  .header img{
       width: 16vw;
       margin-left: 41%;
     }
 	
 	.header h1 {
-	font-size: 55px;
+	font-size: 50px;
       text-align: center;
      font-family: "Trebuchet MS", Helvetica, sans-serif;
      
   	}
 	
     .header h1:hover {
-      font-size: 56px;
+      font-size: 51px;
     }
 	
 	.typing{
@@ -278,21 +301,22 @@ margin-bottom:40%;
 </style>
 </head>
 <body onload="mysite()">
+	<section class="background">
   <div id="loader">
 	 <img src="/PC-loader.gif">
 	</div>
 	<header>
 <ul>
 
-      <li><a href="#home"><strong><i class="fas fa-home"></i> Home</strong></a></li>
-	  <li><a href="#gallery"><b><i class="fas fa-camera-retro"></i> Gallery</b></a></li>
-	  <li><a href="#aboutme"><b><i class="fas fa-info"></i> About me</b></a></li>
-	  <li><a href="#contactme" style= "font-size: 12px"><b><i class="fas fa-phone-alt"></i> Contact me</b></a></li>
+      <li><a href="#home"><strong><i class="fas fa-home"></i> HOME</strong></a></li>
+	  <li><a href="#gallery"><b><i class="fas fa-camera-retro"></i> GALLERY</b></a></li>
+	  <li><a href="#aboutme"><b><i class="fas fa-info"></i> ABOUT ME</b></a></li>
+	  <li><a href="#contactme"><b><i class="fas fa-phone-alt"></i> CONTACT ME</b></a></li>
   </ul>
 	</header>
 	<div  class="header" id="home">
 	 <img src="circle-croppe.png">
-	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: white; font-size: "><h4 style="margin-bottom: 0px;" data-aos="fade-down">Hey I'm</h4></a>
+	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: white; font-size: "><h5 style="margin-bottom: 0px;" data-aos="fade-down">Hey I'm</h5></a>
 	   <div style= "height:300px;">
 	   <h1 style="text-align: center; margin-top: 0px;color: white;" data-aos="fade-down"><strong>Sunil Solanki</strong></h1>
   </div>
@@ -382,7 +406,7 @@ margin-bottom:40%;
   <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
-  <h1 style= "color: white"><strong>Gallery</strong></h1>
+  <h1 style= "color: white"><strong>GALLERY</strong></h1>
 </div><br>
 
 </div>
@@ -504,5 +528,6 @@ function showSlides() {
   AOS.init();
 </script>
 <!--on scroll effects script end -->
+	</section>
   </body>
 </html>

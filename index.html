@@ -82,22 +82,22 @@ margin-left: 1px;
 }
 
 ul li a{
-  text-decoration: none;color: #ffff;
+  text-decoration: none;color: var(--secondary-color);
   padding: 1px 5px ;
-  border:1px solid #ffff;
+  border:1px solid var(--secondary-color);
   font-size: 0.897rem;
   transition: 0.8s ease;
 }
 
 ul li a:hover{
-  background-color: #ffff;
-  color: black;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 
 }
 	  
 .typing{
   width: 0ch;
-  color: #ffff;
+  color: var(--primary-color);
   overflow: hidden;
   white-space: nowrap;
   animation: text 8s infinite alternate;
@@ -212,6 +212,31 @@ margin-bottom:40%;
     overflow: hidden;
   } 
 	
+.themeword{
+  float: right;
+  margin-top: 0.5%;
+  margin-right: 1%;
+  color: var(--primary-color);
+}
+
+
+#icon{
+  float: right;
+  display: inline-block;
+  padding: 1px 3px;
+  height: 43px;
+  width: 3vw;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 2%;
+  border:1px solid var(--primary-color);
+  border-radius: 50%;
+  z-index: 9999;
+  transform: rotate(-30deg);
+  transition: 0.6s ease;
+}
+	
 	
 ul{
   float: left;
@@ -224,18 +249,17 @@ ul li{
 }
 
 ul li a{
-  text-decoration: none;color: #ffff;
+  text-decoration: none;color: var(--primary-color);
   padding: 5px 20px;
-  border:1px solid #ffff;
+  border:1px solid var(--primary-color);
   transition: 0.8s ease;
 }
 
 ul li a:hover{
-  background-color: #ffff;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 
-}
-	
+}	
  .header img{
       width: 16vw;
       margin-left: 41%;
@@ -254,7 +278,7 @@ ul li a:hover{
 	
 	.typing{
   width: 0ch;
-  color: #ffff;
+  color: var(--primary-color);
   overflow: hidden;
   white-space: nowrap;
   animation: text 8s infinite alternate;
@@ -314,12 +338,15 @@ ul li a:hover{
 	  <li><a href="#contactme"><b><i class="fas fa-phone-alt"></i> CONTACT ME</b></a></li>
   </ul>
 	</header>
+		
+		<img title="Change Theme" src="C:\my First website\themeimg/moon.png" id="icon" alt="Change Theme"><br><h5 class="themeword">Change Theme</h5>
+		
 	<div  class="header" id="home">
 	 <img src="circle-croppe.png">
-	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: white; font-size: "><h5 style="margin-bottom: 0px;" data-aos="fade-down">Hey I'm</h5></a>
+	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: var(--primary-color); font-size: "><h5 style="margin-bottom: 0px;" data-aos="fade-down">Hey I'm</h5></a>
 	   <div style= "height:300px;">
-	   <h1 style="text-align: center; margin-top: 0px;color: white;" data-aos="fade-down"><strong>Sunil Solanki</strong></h1>
-  </div>
+	   <h1 style="text-align: center; margin-top: 0px;color: var(--primary-color);" data-aos="fade-down"><strong>Sunil Solanki</strong></h1>
+  </div>	
     </div>
 	
 	 <div class="typing"><h4>I'm a Software Engineer</h4></div>
@@ -406,7 +433,7 @@ ul li a:hover{
   <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
-  <h1 style= "color: white"><strong>GALLERY</strong></h1>
+  <h1 style= "color:  var(--primary-color)"><strong>GALLERY</strong></h1>
 </div><br>
 
 </div>
@@ -528,6 +555,20 @@ function showSlides() {
   AOS.init();
 </script>
 <!--on scroll effects script end -->
+		
+<script type="text/javascript">
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+      icon.src = "C:/my First website/themeimg/sun.jpeg";
+    } else{
+      icon.src="C:/my First website/themeimg/moon.png";
+    }
+  }
+</script>		
+		
 	</section>
   </body>
 </html>

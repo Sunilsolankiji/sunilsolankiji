@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <title>Sunil Solanki</title>
-<script data-ad-client="ca-pub-7352859930142362" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-client="ca-pub-7352859930142362" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel = "icon" href="circle-croppe.png" type = "image/x-icon">
+  <link rel = "icon" href="/circle-croppe.png" type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel = "stylesheet" href="fontawesome-free-5.15.2-web/css/all.css">
-        <link rel="stylesheet" href="style.css">
+  <link rel = "stylesheet" href="C:\my First website\fontawesome-free-5.15.2-web\css/all.css">
+ <link rel="stylesheet" href="style.css">
   <style>
   *{
   margin: 0;
@@ -17,31 +17,46 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-    html {scroll-behavior: smooth;}
-    body {
+ html {scroll-behavior: smooth;}
+     body {
+     /*background-image:url('/Backgroundfinal.jpg');*/
+     /*background-repeat: no-repeat;*/
+     /*background-size:cover;*/
+     /*background-attachment: fixed; */
      font-size: 16px;
      color: black;
 	 margin: 0px;
+	 
   }
-	  
-	  .background{
-  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('Backgroundfinal.jpg');
+
+.background{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/Backgroundfinal.jpg');
   background-repeat: no-repeat;
      background-size:cover;
      background-attachment: fixed;
 }
 
-	  
-	  #loader img{
+  /*#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: transparent
+    url('C:/Users/Lenovo/Downloads/Double Ring-1s-200px.gif')
+    no-repeat center;
+    z-index: 9999;
+    overflow: hidden;
+  }*/
+  #loader img{
     position: fixed;
     width: 70vw;
     margin-left: 13%;
     margin-top: 60%; 
     background: transparent;
-    z-index: 1;
+    z-index: 9999;
     overflow: hidden;
   }
-	  header {
+  
+  header {
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +64,15 @@
   width: ;
   z-index:1;
 }
+  
   	.header { 
+      padding: 5px 0px;
+    }
+
+
+
+
+  		.header { 
       padding: 180px 50px;
     }
 
@@ -65,10 +88,36 @@
   .header img{
       width: 28vw;
       margin-left: 31%;
-
     }
+/*old nav bar css style start*/
 	
-	
+	/*ul {
+  list-style-type: none;
+  margin-top: 0px;
+  padding: 0;
+  width: 100px;
+  background-color: ;
+  position: fixed;
+  height: 46%;
+  overflow: auto;
+  display: inline-block;
+}
+ul a {
+  display: inline-block;
+  color: #ffff;
+  padding: 10px 1px;
+  text-decoration: none;
+  border-bottom: 1px solid #ffff;
+}
+
+ /*Change the link color on hover*/ 
+/*ul a:hover {
+  background-color:#ffff;
+  color: black;
+
+}*/
+
+/*End*/
 
 ul{
   float: left;
@@ -82,11 +131,11 @@ margin-left: 1px;
 }
 
 ul li a{
-  text-decoration: none;color: var(--secondary-color);
+  text-decoration: none;color:var(--secondary-color);
   padding: 1px 5px ;
   border:1px solid var(--secondary-color);
   font-size: 0.897rem;
-  transition: 0.8s ease;
+  transition: 0.6s ease;
 }
 
 ul li a:hover{
@@ -94,7 +143,8 @@ ul li a:hover{
   color: var(--primary-color);
 
 }
-	  
+
+
 .typing{
   width: 0ch;
   color: var(--primary-color);
@@ -117,15 +167,21 @@ ul li a:hover{
   }
 }
 
+
+
 .mySlides {display: none;}
-img {vertical-align: middle;}
+.myslides img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
+  margin-top: 30%;
   max-width: 400px;
   position: relative;
-  margin: auto;
+  margin-left:auto;
+  margin-right: auto;
 }
+
+
 
 /* Number text (1/12 etc) */
 .numbertext {
@@ -170,7 +226,7 @@ img {vertical-align: middle;}
 }
 
 
-	  .container {
+.container {
   position: relative;
   width: 100%;
  margin-left: ;
@@ -189,30 +245,48 @@ margin-bottom:40%;
   height: 100%;
   border: none;
 }
-	  
-	  
-	  
-	  
-/* On larger screens, increase text size */
+
+.subscribe {
+ background-color: #1a1a1a;
+ transition: 0.3s;
+ border-radius: 30px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+cursor: pointer;
+margin-left: 45%;
+margin-bottom: 2%;
+
+}
+.subscribe:hover{
+  padding: 11px 21px;
+background-color: red;
+font-size: 16px;
+}
+
+  
+/* On larger screens, decrease text size */
 
 @media only screen and (min-width: 1000px) {
-  body {
+   body {
   overflow:visible;
   }
  
-	#loader{
+ #loader{
     position: fixed;
     width: 100%;
-    margin-left: -1%;		
+    margin-left: -1%;
     height: 100vh;
     background:
-    url('/PC-loader.gif')
+    url('C:/Users/Lenovo/Downloads/PC-loader.gif')
     no-repeat center;
-    z-index: 9999;
+    z-index: 1;
     overflow: hidden;
-  } 
-	
-.themeword{
+  }
+
+  .themeword{
   float: right;
   margin-top: 0.5%;
   margin-right: 1%;
@@ -236,8 +310,7 @@ margin-bottom:40%;
   transform: rotate(-30deg);
   transition: 0.6s ease;
 }
-	
-	
+
 ul{
   float: left;
   list-style-type: none;
@@ -259,12 +332,29 @@ ul li a:hover{
   background-color: var(--primary-color);
   color: var(--secondary-color);
 
-}	
+}
+
  .header img{
       width: 16vw;
       margin-left: 41%;
+    /*animation: main-img 1.4s ease infinite;*/
     }
-	
+
+    /*.header img:hover{
+      margin-top: -1%;
+    }*/
+	/*@keyframes main-img{
+    0%{
+      margin-top: -0.5%;
+    }
+    50%{
+      margin-top: -1%;
+    }
+    100%{
+      margin-top: 0%;
+    }
+  }*/
+  
 	.header h1 {
 	font-size: 50px;
       text-align: center;
@@ -276,7 +366,8 @@ ul li a:hover{
       font-size: 51px;
     }
 	
-	.typing{
+
+.typing{
   width: 0ch;
   color: var(--primary-color);
   overflow: hidden;
@@ -286,9 +377,9 @@ ul li a:hover{
   position: absolute; 
   text-align: center;
   margin-left: 34%;
-  margin-top: -26%;
-  margin-bottom: 20%;
-  font-size: 40px;
+  margin-top: -26.5%;
+  margin-bottom: 110%;
+  font-size: 35px;
 }  
 .typing h4{
   justify-content: center;
@@ -301,7 +392,8 @@ ul li a:hover{
     width: 19.4ch;
   }
 }
-	  .container {
+
+.container {
   position: relative;
   width: 55%;
  margin-left: 22.5%;
@@ -320,101 +412,102 @@ ul li a:hover{
   height: 100%;
   border: none;
 }
+  }
+  
 
-	  }
 </style>
 </head>
 <body onload="mysite()">
-	<section class="background">
+  <section class="background">
   <div id="loader">
-	 <img src="/PC-loader.gif">
-	</div>
-	<header>
+    <img src="C:/Users/Lenovo/Downloads/PC-loader.gif">
+  </div>
+<header>
 <ul>
 
       <li><a href="#home"><strong><i class="fas fa-home"></i> HOME</strong></a></li>
 	  <li><a href="#gallery"><b><i class="fas fa-camera-retro"></i> GALLERY</b></a></li>
 	  <li><a href="#aboutme"><b><i class="fas fa-info"></i> ABOUT ME</b></a></li>
-	  <li><a href="#contactme"><b><i class="fas fa-phone-alt"></i> CONTACT ME</b></a></li>
+	  <li><a href="#Contactme"><b><i class="fas fa-phone-alt"></i> CONTACT ME</b></a></li>
   </ul>
-	</header>
-		
-		<img title="Change Theme" src="moon.png" id="icon" alt="Change Theme"><br><h5 class="themeword">Change Theme</h5>
-		
+  </header>
+  <img title="Change Theme" src="C:\my First website\themeimg/moon.png" id="icon" alt="Change Theme"><br><h5 class="themeword">Change Theme</h5>
 	<div  class="header" id="home">
-	 <img src="circle-croppe.png">
-	    <a href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: var(--primary-color); font-size: "><h5 style="margin-bottom: 0px;" data-aos="fade-down">Hey I'm</h5></a>
-	   <div style= "height:300px;">
-	   <h1 style="text-align: center; margin-top: 0px;color: var(--primary-color);" data-aos="fade-down"><strong>Sunil Solanki</strong></h1>
-  </div>	
+	 <img src="/circle-croppe.png">
+	    <a  href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: var(--primary-color);"><h5 style="margin-bottom: 0px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">Hey I'm</h5></a>
+	   <div style= "height:300px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+	   <h1 style="text-align: center; margin-top: 0px;color: var(--primary-color);"><strong>Sunil Solanki</strong></h1>
+  </div>
     </div>
+
+    <div class="typing"><h4>I'm a Software Engineer</h4></div>
+
+
+<a href="#gallery"><div class="scroll-down"></div></a>
 	
-	 <div class="typing"><h4>I'm a Software Engineer</h4></div>
-	
-	<a href="#gallery"><div class="scroll-down"></div></a>
-	
-  <div class="slideshow-container" id="gallery" data-aos="fade-up">
+  <div class="slideshow-container" id="gallery" data-aos="fade-up"  data-aos-duration="8000">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 12</div>
-  <img src="Sunil6.jpg" style="width:90%">
- 
+  <img src="/C:\Users\Lenovo\Pictures\Restored/sunil6.jpg" style="width:90%">
+
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 12</div>
-  <img src="Sunil_ji.jpg" style="width:100%">
+  <img src="/C:\Photos/sunil_ji.jpg" style="width:100%">
 
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 12</div>
-  <img src="Sunil2.jpg" style="width:50%">
+  <img src="/C:\Users\Lenovo\Pictures\Restored/sunil2.jpg" style="width:50%; margin-left: 23%">
 
 </div>
 <div class="mySlides fade">
   <div class="numbertext">4 / 12</div>
-  <img src="instasize_200819215702.png" style="width:100%">
+  <img src="/C:\Users\Lenovo\Pictures\Restored/instasize_200819215702.png" style="width:100%">
 
 </div>
+
 <div class="mySlides fade">
   <div class="numbertext">5 / 12</div>
-  <img src="Sunil5.jpg" style="width:70%">
+  <img src="/C:\Photos/sunil5.jpg" style="width:70%; margin-left: 20%">
 
 </div>
 <div class="mySlides fade">
   <div class="numbertext">6 / 12</div>
-  <img src="sunilji2.jpg" style="width:100%">
+  <img src="/sunilji2.jpg" style="width:100%">
 
 </div>
 <div class="mySlides fade">
   <div class="numbertext">7 / 12</div>
-  <img src="sunilji.jpg" style="width:100%">
+  <img src="/C:\Users\Lenovo\Pictures\Camera/sunilji.jpg" style="width:100%">
 
 </div>
 <div class="mySlides fade">
   <div class="numbertext">8 / 12</div>
-  <img src="FACE_SC_1598791940212.jpg" style="width:100%">
+  <img src="/C:\Users\Lenovo\Pictures\Collage/FACE_SC_1598791940212.jpg" style="width:100%">
  
 </div>
 <div class="mySlides fade">
   <div class="numbertext">9 / 12</div>
-  <img src="FACE_SC_1601778723283.jpg" style="width:100%">
+  <img src="/C:\Users\Lenovo\Pictures\Collage/FACE_SC_1601778723283.jpg" style="width:100%">
  
 </div>
 <div class="mySlides fade">
   <div class="numbertext">10 / 12</div>
-  <img src="FACE_SC_1586226301022.jpg" style="width:100%">
+  <img src="/C:\Users\Lenovo\Pictures\Collage/FACE_SC_1586226301022.jpg" style="width:100%">
   
 </div>
 <div class="mySlides fade">
   <div class="numbertext">11 / 12</div>
-  <img src="20190521_094340.jpg" style="width:50%">
+  <img src="/C:\Users\Lenovo\Pictures\Restored/20190521_094340.jpg" style="width:50%; margin-left: 20%">
  
 </div>
 <div class="mySlides fade">
   <div class="numbertext">12 / 12</div>
-  <img src="IMG_20170605_114015.jpg" style="width:70%">
+  <img src="/C:\Users\Lenovo\Pictures\Restored/IMG_20170605_114015.jpg" style="width:70%; margin-left: 20%">
  
 </div>
 </div>
@@ -433,7 +526,7 @@ ul li a:hover{
   <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
-  <h1 style= "color:  var(--primary-color)"><strong>GALLERY</strong></h1>
+  <h1 data-aos="fade-up" style= "color:var(--primary-color)"><strong>Gallery</strong></h1>
 </div><br>
 
 </div>
@@ -460,19 +553,16 @@ function showSlides() {
 }
 </script>
 <br     ><br     ><br     ><br     >
-
-	<div class="container" data-aos="fade-up">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/OQpmL6pweYg?autoplay=1mute=1&playlist=OQpmL6pweYg&loop=1" frameborder="0" 
-	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-left:">
-		</iframe>
+<div class="container">
+<iframe data-aos="fade-up" class="responsive-iframe" src="https://www.youtube.com/embed/OQpmL6pweYg?autoplay=1&mute=0&playlist=OQpmL6pweYg&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-left:"></iframe>
  </div>
-	
-	
+ <a href="https://www.youtube.com/channel/UC_N3oEm50iK4Gx5QBsOx-dw" target="_blank" class="subscribe">SUBSCRIBE</a>
+ 
  <footer>
       <div class="main-content">
         <div class="left box" id="aboutme">
           <h2>About us</h2>
-          <div class="content" data-aos="fade-up">
+          <div data-aos="fade-up" class="content">
             <p>Hey, I'm Sunil Solanki, I am a student of Computer Science branch, pursuing Bachelor of Technology (B. Tech.) IIIrd Year at Bansal Institute of Research & Technology, Bhopal.
 	  Basically I belong to a small village named Jagmalpura it is situated in M.P. India and I completed my schooling from two different schools, upto 3rd I studied at my 
 	  village Jagmalpura in New Golden Middle School and from 4th to 12th I studied at Ashta in Talent Innovative Hr. Sec. School.
@@ -481,20 +571,20 @@ function showSlides() {
               <a href="https://www.facebook.com/profile.php?id=100062940562628" target="_blank"><span class="fab fa-facebook-f"></span></a>
               <a href="https://www.instagram.com/sunilsolankiji/" target="_blank"><span class="fab fa-instagram"></span></a>
               <a href="mailto:sunilso9644@gmail.com" target="_blank"><span class="far fa-envelope"></span></a>
-			   <a href="https://www.linkedin.com/in/sunil-solanki-28b987175/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+			        <a href="https://www.linkedin.com/in/sunil-solanki-28b987175/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
             </div>
           </div>
         </div>
 
         <div class="center box">
           <h2>Address</h2>
-          <div class="content" data-aos="fade-up">
+          <div data-aos="fade-up" class="content">
             <div class="place">
-      <a href="https://goo.gl/maps/Qnnv9oU2rfmuo3hq5" target="_blank" style="color:white"><span class="fas fa-map-marker-alt"></span></a>
+            <a href="https://goo.gl/maps/Qnnv9oU2rfmuo3hq5" target="_blank" style="color:white"><span class="fas fa-map-marker-alt"></span></a>
             <span class="text">Jagmalpura,Ashta</span>
             </div>
             <div class="phone">
-               <a href=”tel:6232971301″ style="color:white"><span class="fas fa-phone-alt"></span></a>
+            <a href=”tel:+916232971301″ style="color:white"><span class="fas fa-phone-alt"></span></a>
               <span class="text">+91 6232971301</span>
             </div>
             <div class="email">
@@ -504,17 +594,17 @@ function showSlides() {
           </div>
         </div>
 
-        <div class="right box" id="contactme">
+        <div class="right box" id="Contactme">
           <h2>Contact us</h2>
           <div class="content">
-            <form method="post" autocomplete="off" name="google-sheet" data-aos="fade-up">
+            <form data-aos="fade-up"  method="post" autocomplete="off" name="google-sheet">
               <div class="email">
                 <div class="text">Email *</div>
                 <input type="email" name="Email" required>
               </div>
               <div class="msg">
                 <div class="text">Message *</div>
-		<input type="text" name="Message" required>
+				        <input type="text" name="Message" required="Message">
                 <!-- <changeit rows="2" cols="25" required></changeit> -->
               </div>
               <div class="btn">
@@ -531,7 +621,8 @@ function showSlides() {
         </center>
       </div>
     </footer>
-	<script>
+    <!--form data collection into google sheet, script start-->
+     <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbwr26FGyy-fj05HdCyLlE-02VU-QlXP6M-Z0w11Usklf0QtuZvFQv7wdcC8jZ_CU6kM/exec'
             const form = document.forms['google-sheet']
           
@@ -542,33 +633,36 @@ function showSlides() {
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
-	 <script>
+    <!--form data collection into google sheet, script End-->
+
+<!--loader script -->
+    <script>
       var preloader = document.getElementById('loader');
       function mysite(){
         preloader.style.display = 'none';
       }
     </script>
-	
+
 <!-- on scroll effects script start -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
 <!--on scroll effects script end -->
-		
+
 <script type="text/javascript">
   var icon = document.getElementById("icon");
 
   icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
-      icon.src = "sun.jpeg";
+      icon.src = "C:/my First website/themeimg/sun.jpeg";
     } else{
-      icon.src="moon.png";
+      icon.src="C:/my First website/themeimg/moon.png";
     }
   }
-</script>		
-		
-	</section>
+</script>
+
+</section>
   </body>
 </html>

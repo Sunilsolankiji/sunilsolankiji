@@ -422,6 +422,29 @@ ul li a:hover{
   <div id="loader">
     <img src="PC-loader.gif">
   </div>
+
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Blogs</a>
+    <a href="#">Projects</a>
+    <a href="#">Resume</a>
+    <a href="#Contactme" onclick="closeNav()">Contact</a>
+    <img title="Change Theme" src="C:\my First website\themeimg/moon.png" id="icon" alt="Change Theme"><br><h5 class="themeword">Change Theme</h5>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer;margin-left:97%;color:#ffff;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
 <header>
 <ul>
 
@@ -431,7 +454,6 @@ ul li a:hover{
 	  <li><a href="#Contactme"><b><i class="fas fa-phone-alt"></i> CONTACT ME</b></a></li>
   </ul>
   </header>
-  <img title="Change Theme" src="moon.png" id="icon" alt="Change Theme"><br><h5 class="themeword">Change Theme</h5>
 	<div  class="header" id="home">
 	 <img src="circle-croppe.png">
 	    <a  href="#aboutme" style="text-decoration: none;text-align: center;font-style:italic;color: var(--primary-color);"><h5 style="margin-bottom: 0px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">Hey I'm</h5></a>
@@ -660,6 +682,7 @@ function showSlides() {
     } else{
       icon.src="moon.png";
     }
+	   alert("                 Theme Changed!!!             ")
   }
 </script>
 

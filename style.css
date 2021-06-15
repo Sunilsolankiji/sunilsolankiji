@@ -71,12 +71,12 @@
   float: right;
   display: inline-block;
   padding: 1px 3px;
-  height: 52px;
-  width: 4vw;
+  height: 50px;
+  width: 13vw;
   cursor: pointer;
   text-align: center;
   margin-top: 10%;
-  margin-right: 2%;
+  margin-right: 5%;
   border:1px solid var(--primary-color);
   border-radius: 50%;
   z-index: 9999;

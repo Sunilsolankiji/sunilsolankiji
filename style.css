@@ -98,7 +98,7 @@
 .scroll-down {
   height: 50px;
   width: 30px;
-  border: 3px solid var(--primary-color);
+  border: 3px solid #fff;
   position: absolute;
   left: 48%;
   top: 92%;
@@ -115,7 +115,7 @@
   height: 8px;
   width: 2px;
   transform: translate(-50%, -100%);
-  border: 2.2px solid var(--primary-color);
+  border: 2.2px solid #fff;
   border-radius: 40%;
   animation: scroll-down 1s ease-in-out infinite;
 }

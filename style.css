@@ -199,11 +199,11 @@ footer{
   border:1px solid var(--secondary-color);
   transition: 0.3s;
 }
-/* .left .content .social a span:hover{
+ .left .content .social a span:hover{
   background: var(--secondary-color);
   color:var(--primary-color);
   }
-  .left .content .social a :nth-child(1):hover{
+/*  .left .content .social a :nth-child(1):hover{
   color: #3b5999;
   }
   
